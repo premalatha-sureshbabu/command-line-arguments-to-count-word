@@ -18,10 +18,19 @@ Give print statement.
 ### Step 6: 
 End the program.
 ## PROGRAM:
-![program](https://user-images.githubusercontent.com/120620842/214021245-b7057783-d866-4d80-ad93-322a0f846527.jpg)
+```
+import sys
+count=0
+with open(sys.argv[1],'r') as f:
+        for line in f:
+            word=line.split()
+            count+=len(word)
+print("Word Count in File=",count)         
+```
 
 ### OUTPUT:
-![output](https://user-images.githubusercontent.com/120620842/214021340-4272b0e4-edc3-4326-8d89-1ea30d7799aa.jpg)
+
+![Screenshot (69) 1](https://user-images.githubusercontent.com/120620842/214797213-212c26eb-37c5-4030-be93-8f9e2367c2f3.png)
 
 
 
