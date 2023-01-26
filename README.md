@@ -19,6 +19,8 @@ Give print statement.
 End the program.
 ## PROGRAM:
 ```
+Developed by : S.Premalatha
+Register number : 22009393
 import sys
 count=0
 with open(sys.argv[1],'r') as f:
@@ -30,7 +32,8 @@ print("Word Count in File=",count)
 
 ### OUTPUT:
 
-![Screenshot (69) 1](https://user-images.githubusercontent.com/120620842/214797213-212c26eb-37c5-4030-be93-8f9e2367c2f3.png)
+![screeenshot 2](https://user-images.githubusercontent.com/120620842/214814152-2a6d2a23-6869-4cc5-bb08-006278e18d10.png)
+
 
 
 
