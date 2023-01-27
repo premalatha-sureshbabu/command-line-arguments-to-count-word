@@ -22,17 +22,22 @@ End the program.
 Developed by : S.Premalatha
 Register number : 22009393
 import sys
-count=0
-with open(sys.argv[1],'r') as f:
-        for line in f:
-            word=line.split()
-            count+=len(word)
-print("Word Count in File=",count)         
+count = {}
+with open(sys.argv[1], 'r') as f:
+    for line in f:
+        for word in line.split():
+            if word not in count:
+                count[word] = 1
+            else:
+                count[word] += 1
+print(count)
+f.close()        
 ```
 
 ### OUTPUT:
 
-![screeenshot 2](https://user-images.githubusercontent.com/120620842/214814152-2a6d2a23-6869-4cc5-bb08-006278e18d10.png)
+![Screenshot (87)](https://user-images.githubusercontent.com/120620842/215146287-a61379eb-6a37-46b1-af5a-15ec1a38e1d7.png)
+
 
 
 
